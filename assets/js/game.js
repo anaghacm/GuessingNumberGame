@@ -49,7 +49,7 @@ async function playGame() {
 
 
 function resetGame() {
-    score = 0;
+    totalScore = 0;
     message = '';
     document.getElementById('message').innerText = '';
     document.getElementById('random').innerText = '';
