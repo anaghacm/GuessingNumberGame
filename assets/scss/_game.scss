@@ -1,0 +1,106 @@
+.game-module{
+    width: 100%;
+
+    .home-link{
+        color: $color-green;
+        float: right;
+        cursor: pointer;
+    }
+
+    .base-div{
+        margin: auto;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        .text-div{
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .heading{
+            font-family: 'Titan One', cursive;
+            font-size: $font-title;
+            color: $color-red;
+            letter-spacing: 2px;
+        }
+        .input-div{
+            color: $color-red;
+        }
+        #userInput{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $color-red;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $color-red;
+            }
+        }
+        .btn-div{
+            padding: $spacer-3 $spacer-0;
+        }
+        .btn-play{
+            background-color: $color-red;
+            color: $color-white;
+            padding: $spacer-0 $spacer-3;
+            transition: all 0.5s;
+
+            &:hover{
+                background-color: $color-green;
+            }
+        }
+        .message{
+            font-size: $font-lg;
+            color: $color-msg;
+            color: $color-btn;
+        }
+        .score{
+            font-weight: 600;
+            font-size: $font-md;
+            color: $color-green;
+            line-height: 15px;
+        }
+    }
+}
+
+
+@include tablet {
+    .game-module {
+        .base-div {
+            .text-div{
+                top: 7%;
+            }
+            .heading {
+                font-size: $font-titlesm;
+            }
+            .btn-div{
+                padding-bottom: $spacer-1;
+            }
+            .message{
+                font-size: $font-md;
+            }
+            .score{
+                font-size: $font-sm;
+                line-height: 6px;
+            }
+        }
+    }
+}
+
+@include mobile{
+    .game-module{
+        .base-div{
+            
+            .heading{
+                padding-bottom: 120px;
+                width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}

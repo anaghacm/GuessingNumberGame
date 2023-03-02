@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif; }
+
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden; }
+
+.home-module {
+  width: 100%; }
+  .home-module .base-div {
+    margin: auto;
+    width: 100%;
+    position: relative; }
+    .home-module .base-div img {
+      width: 100%; }
+    .home-module .base-div .text-div {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+    .home-module .base-div .heading {
+      font-family: 'Titan One', cursive;
+      font-size: 40px;
+      color: #7d090c;
+      letter-spacing: 2px; }
+    .home-module .base-div .btn-play {
+      background-image: url("../images/playbtn.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 151px;
+      height: 121px;
+      font-size: 18px;
+      font-family: 'Titan One', cursive;
+      color: #be0811;
+      text-align: left;
+      padding-top: 50px;
+      animation: movebtn 2s ease-in-out infinite; }
+      .home-module .base-div .btn-play:focus {
+        border: none;
+        color: #be0811; }
+
+@keyframes movebtn {
+  0% {
+    transform: translateX(5px); }
+  20% {
+    transform: translateX(-5px); }
+  40% {
+    transform: translateX(10px); }
+  60% {
+    transform: translateX(-10px); }
+  80% {
+    transform: translateX(5px); }
+  90% {
+    transform: translateX(-5px); }
+  100% {
+    transform: translateX(0px); } }
+@media (max-width: 991px) {
+  .home-module .base-div .text-div {
+    top: 15%; }
+  .home-module .base-div .heading {
+    font-size: 34px; }
+  .home-module .base-div .btn-play {
+    width: 100px;
+    height: 80px;
+    font-size: 12px;
+    padding-top: 30px; } }
+@media (max-width: 767px) {
+  .home-module .base-div .text-div {
+    width: 70%;
+    left: 15%; }
+  .home-module .base-div .btn-play {
+    margin-top: 80px; } }
+.game-module {
+  width: 100%; }
+  .game-module .home-link {
+    color: #013133;
+    float: right;
+    cursor: pointer; }
+  .game-module .base-div {
+    margin: auto;
+    position: relative; }
+    .game-module .base-div img {
+      width: 100%; }
+    .game-module .base-div .text-div {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+    .game-module .base-div .heading {
+      font-family: 'Titan One', cursive;
+      font-size: 40px;
+      color: #7d090c;
+      letter-spacing: 2px; }
+    .game-module .base-div .input-div {
+      color: #7d090c; }
+    .game-module .base-div #userInput {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #7d090c; }
+      .game-module .base-div #userInput:focus {
+        outline: none; }
+      .game-module .base-div #userInput::placeholder {
+        color: #7d090c; }
+    .game-module .base-div .btn-div {
+      padding: 30px 0px; }
+    .game-module .base-div .btn-play {
+      background-color: #7d090c;
+      color: #FFF;
+      padding: 0px 30px;
+      transition: all 0.5s; }
+      .game-module .base-div .btn-play:hover {
+        background-color: #013133; }
+    .game-module .base-div .message {
+      font-size: 24px;
+      color: #019355;
+      color: #be0811; }
+    .game-module .base-div .score {
+      font-weight: 600;
+      font-size: 18px;
+      color: #013133;
+      line-height: 15px; }
+
+@media (max-width: 991px) {
+  .game-module .base-div .text-div {
+    top: 7%; }
+  .game-module .base-div .heading {
+    font-size: 34px; }
+  .game-module .base-div .btn-div {
+    padding-bottom: 10px; }
+  .game-module .base-div .message {
+    font-size: 18px; }
+  .game-module .base-div .score {
+    font-size: 12px;
+    line-height: 6px; } }
+@media (max-width: 767px) {
+  .game-module .base-div .heading {
+    padding-bottom: 120px;
+    width: 70%;
+    margin: auto; } }
+
+/*# sourceMappingURL=style.css.map */
